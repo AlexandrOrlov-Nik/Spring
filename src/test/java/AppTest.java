@@ -1,4 +1,3 @@
-/*
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -29,4 +28,3 @@ public class AppTest {
         Assert.assertNotSame("Тест провален, не корректная настройка бина Cat", one, two);
     }
 }
-*/
