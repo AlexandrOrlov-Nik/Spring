@@ -3,7 +3,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 @Configuration
-public class AppConfig {
+public class    AppConfig {
  
     @Bean(name="helloworld")
     public HelloWorld getHelloWorld() {
@@ -11,4 +11,14 @@ public class AppConfig {
         helloWorld.setMessage("Hello World!");
         return helloWorld;
     }
+
+    @Bean(name = "cat")
+    @Scope("request")
+    public Cat  getCat() {
+        Cat cat = new Cat();
+        cat.setName("Meaw");
+        return cat;
+    }
+
+
 }
